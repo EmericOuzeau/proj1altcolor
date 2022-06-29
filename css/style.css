@@ -1,0 +1,279 @@
+/*variable*/
+:root {
+    --font-primary: 'Work Sans';
+    --font-secondary: Arial;
+    --color-header : #414865;
+    --color-text-block : white;
+    --color-titre : black;
+    --bg-color1: #F87659;
+    --bg-color2: #7371CA;
+    --bg-color3: #71CA9F;
+    --bg-color4: #F8AE59;
+    --bg-color5: #71BFCA;
+    --bg-color6: #AD71CA;
+    --bg-color7: #5AA6FF;
+
+}
+
+
+/*couleur de font*/
+.bgcolor1{
+    background: linear-gradient(#ff957d, #df2900);
+}
+
+.bgcolor2{
+    background: linear-gradient(#b27bff, #5800d3);
+}
+
+.bgcolor3{
+    background: linear-gradient(#84F5D0, #00CB89);
+}
+
+.bgcolor4{
+    background: linear-gradient(#FFC37B, #EF8200);
+}
+
+.bgcolor5{
+    background: linear-gradient(#7afaef, #00d9c7);
+}
+
+.bgcolor6{
+    background: linear-gradient(#D187FF, #A20EFF);
+}
+
+.bgcolor7{
+    background: linear-gradient(#7acffa, #0096e2);
+}
+
+
+/*body*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 10em;
+}
+
+/*header*/
+header{
+    display: flexbox;
+    background-color: var(--color-header);
+    border-bottom-left-radius: 2em;
+    padding-bottom: 1.2em;
+    padding-top: 3em;
+}
+
+.line {
+    margin: 0em 1em 0em 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#btnhead {
+    display: flex;
+    right: 0px;
+}
+
+#logohead {
+    width: 1.8em;
+}
+
+a{
+    font-weight: lighter;
+    text-decoration: none;
+    color: rgb(134, 134, 134);
+}
+
+/*couleur de la majorité des titres*/
+h1, header h2, h3, h4 {
+    color: var(--color-text-block);
+}
+
+/*slider règle basique*/
+.entete{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.slide {
+    width: 100vw;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.zone-slide{
+    margin: 0em 1em 0em 1em;
+    display: flex;
+    gap: 1em;
+}
+
+/*slider règle header*/
+.container-slide-head{
+    position: relative;
+    padding: 1em;
+    width: 18em;
+    height: 10em;
+    border-radius: 0.5em 2em 0.5em 2em;
+}
+
+.btnslider-head{
+    background-color: rgba(255, 255, 255, 0.2); 
+    padding: 0.4em 1.2em 0.4em 1.2em;
+    border-radius: 1em;
+    font-size: 0.9em;
+    color: white;
+}
+
+.text-headslide{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 0.6em;
+}
+
+h3{
+    font-size: 1.8em;
+    width: 50%;
+    margin-bottom: 0em;
+}
+
+.container-slide-head p{
+    margin-top: 0.4em;
+    font-size: 0.9em;
+    color: white;
+    opacity: 70%;
+}
+
+.container-slide-head img{
+    position: absolute;
+    right: -0.8em;
+    top: -0.8em;
+}
+
+/*slider règle main*/
+.container-slide-main{
+    display: flex;
+    align-items:flex-end;
+    position: relative;
+    padding: 1em;
+    padding-bottom: 0em;
+    width: 8em;
+    height: 11em;
+    border-radius: 0.5em 2em 0.5em 2em;
+}
+
+h4{
+    font-size: 1.2em;
+}
+
+.container-slide-main > img{
+    position: absolute;
+    right: -0.8em;
+    top: 0em;
+}
+
+
+/*footer*/
+
+footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    border-radius: 2em 2em 0em 0em;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.2));
+    padding-bottom: 2em;
+}
+
+/*bouton principale footer*/
+#mainbutton{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--color-header);
+    border-radius: 3em;
+    color: white;
+    width: 30%;
+    padding: 1em;
+}
+
+/*recherche
+
+main{
+    width: 90%;
+    margin: auto;
+}
+
+#btnclose{
+    display: block;
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    right: 2em;
+    top: 2em;
+    padding-top: 0.8em;
+}
+
+.bar{
+    width: 90%;
+    height: 10%;
+    background-color: white;
+}
+
+.bar1{
+    transform:  rotate(45deg);
+}
+
+.bar2{
+    transform: translateY(-100%) rotate(-45deg);
+}
+
+#bg-option{
+    width: 100;
+    background-color: var(--color-header);
+}
+
+#contain-btn-option{
+    display: flex;
+}
+
+.btn-option{
+    margin: 1em;
+}
+
+
+input[type="checkbox"].check-option {
+    display: none;
+  }
+  
+  input[type="checkbox"].check-option + label {
+    text-align: center;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 2em;
+    cursor: pointer;
+    padding: 1em;
+    margin: 1em;
+    margin-top: 3em;
+  }
+  
+  input[type="checkbox"].check-option:hover + label {
+    background-color: #178e1f;
+    color: white;
+  }
+  
+  input[type="checkbox"].check-option:checked + label {
+    background-color: white;
+    color: black;
+  }
+
+
+*/
